@@ -11,5 +11,4 @@ public class PermissionAuthorizeAttribute : AuthorizeAttribute
         AuthenticationSchemes = "Bearer";
         Policy = requiredPermission;
     }
-        
 }

@@ -13,12 +13,12 @@ public class Course
     public DateTime UpdatedAt { get; set; }
     public CourseStatus Status { get; set; }
 
-    public int CategoryId { get; set; }
-    public Category Category { get; set; }
+    public int? CategoryId { get; set; }
+    public Category? Category { get; set; }
     
-    public int InstructorId { get; set; }
-    public User Instructor { get; set; }
+    public int? InstructorId { get; set; }
+    public User? Instructor { get; set; }
 
-    public ICollection<Module> Modules { get; set; }
-    public ICollection<Enrollment> Enrollments { get; set; }
+    public ICollection<Module> Modules { get; set; } = new List<Module>();
+    public ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();
 }

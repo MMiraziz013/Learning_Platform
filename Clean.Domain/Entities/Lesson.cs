@@ -11,7 +11,7 @@ public class Lesson
     public bool IsPreview { get; set; }
 
     public int ModuleId { get; set; }
-    public Module Module { get; set; }
+    public Module Module { get; set; } = default!;
 
-    public ICollection<LessonProgress> LessonProgresses { get; set; }
+    public ICollection<LessonProgress> LessonProgresses { get; set; } = new List<LessonProgress>();
 }

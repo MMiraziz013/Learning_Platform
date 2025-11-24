@@ -8,8 +8,8 @@ public class LessonProgress
     
     
     public int UserId { get; set; }
-    public User User { get; set; }
+    public User User { get; set; } = default!;
     
     public int LessonId { get; set; }
-    public Lesson Lesson { get; set; }
+    public Lesson Lesson { get; set; } = default!;
 }

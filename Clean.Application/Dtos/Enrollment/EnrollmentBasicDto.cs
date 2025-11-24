@@ -1,4 +1,4 @@
-namespace Clean.Application.Dtos.User;
+namespace Clean.Application.Dtos.Enrollment;
 
 public class EnrollmentBasicDto
 {
